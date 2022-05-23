@@ -77,3 +77,16 @@ oppo/build/
 oppo/.idea/
 oppo/.gradle/
 xiaomi/
+
+
+Client/[Ll]ibrary/
+Client/[Tt]emp/
+Client/[Oo]bj/
+Client/[Bb]uild/
+Client/[Bb]uilds/
+
+
+Server/Server/bin/
+Server/Server/obj/
+Server/CommonPub/bin/
+Server/CommonPub/obj/

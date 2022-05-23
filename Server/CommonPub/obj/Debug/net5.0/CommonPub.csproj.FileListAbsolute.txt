@@ -1,0 +1,11 @@
+D:\csharp_codes\MyTinyGame\Server\CommonPub\obj\Debug\net5.0\CommonPub.GeneratedMSBuildEditorConfig.editorconfig
+D:\csharp_codes\MyTinyGame\Server\CommonPub\obj\Debug\net5.0\CommonPub.AssemblyInfoInputs.cache
+D:\csharp_codes\MyTinyGame\Server\CommonPub\obj\Debug\net5.0\CommonPub.AssemblyInfo.cs
+D:\csharp_codes\MyTinyGame\Server\CommonPub\obj\Debug\net5.0\CommonPub.csproj.CoreCompileInputs.cache
+D:\csharp_codes\MyTinyGame\Server\CommonPub\bin\Debug\net5.0\CommonPub.deps.json
+D:\csharp_codes\MyTinyGame\Server\CommonPub\bin\Debug\net5.0\CommonPub.dll
+D:\csharp_codes\MyTinyGame\Server\CommonPub\bin\Debug\net5.0\ref\CommonPub.dll
+D:\csharp_codes\MyTinyGame\Server\CommonPub\bin\Debug\net5.0\CommonPub.pdb
+D:\csharp_codes\MyTinyGame\Server\CommonPub\obj\Debug\net5.0\CommonPub.dll
+D:\csharp_codes\MyTinyGame\Server\CommonPub\obj\Debug\net5.0\ref\CommonPub.dll
+D:\csharp_codes\MyTinyGame\Server\CommonPub\obj\Debug\net5.0\CommonPub.pdb
