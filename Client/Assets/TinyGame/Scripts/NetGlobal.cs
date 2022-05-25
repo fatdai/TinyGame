@@ -159,6 +159,13 @@ public class NetGlobal : MonoBehaviour
                     AppNav.instance.ShowMatchLayer();
                 });
                 break;
+            case SC_ID.RES_MATCH:
+                Res_MatchData resMatchData = CodecHelper.DecodeMsg<Res_MatchData>(msgBuffer);
+                Log.Info("Æ¥Åä³É¹¦...");
+                AddAction(() => {
+                    AppNav.instance.ShowGame();
+                });
+                break;
             default:
                 break;
         }

@@ -106,4 +106,8 @@ public class AppNav : MonoBehaviour,IFSM
     public void ShowMatchLayer() {
         CurState.ChangeState(m_MatchState);
     }
+
+    public void ShowGame() {
+        CurState.ChangeState(m_GameNavState);
+    }
 }

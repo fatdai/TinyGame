@@ -23,14 +23,14 @@ public class CodecHelper
     public static void WriteString(string str, byte[] dstBuffer, int dstOffset)
     {
         byte[] bytes = Encoding.UTF8.GetBytes(str);
-        if(bytes.Length + dstOffset > dstBuffer.Length)
+        if (bytes.Length + dstOffset > dstBuffer.Length)
         {
             throw new Exception("dstBuffer 空间不够!");
         }
-        Array.Copy(bytes, 0, dstBuffer, dstOffset,bytes.Length);
+        Array.Copy(bytes, 0, dstBuffer, dstOffset, bytes.Length);
     }
 
-    public static byte[] EncodeMsg<T>(ushort cmd,T t)
+    public static byte[] EncodeMsg<T>(ushort cmd, T t)
     {
         string str = JsonMapper.ToJson(t);
         byte[] bytes = Encoding.UTF8.GetBytes(str);
@@ -38,12 +38,12 @@ public class CodecHelper
         // 换成缓存
         byte[] result = new byte[bytes.Length + 4];
         WriteUShort(cmd, result, 0);
-        WriteUShort((ushort)bytes.Length, result,   2);
-        WriteByteArray(bytes, result,  4);
+        WriteUShort((ushort)bytes.Length, result, 2);
+        WriteByteArray(bytes, result, 4);
         return result;
     }
 
-    public static T DecodeMsg<T>(byte[] buf) 
+    public static T DecodeMsg<T>(byte[] buf)
     {
         string str = Encoding.UTF8.GetString(buf);
         return JsonMapper.ToObject<T>(str);
@@ -53,14 +53,14 @@ public class CodecHelper
 public static class CS_ID
 {
     public const ushort LOGIN = 1;
-    public const ushort REGIST = 2;
+    //public const ushort REGIST = 2;
     public const ushort MATCH = 3;
 }
 
 public static class SC_ID
 {
     public const ushort RES_LOGIN = 1;
-    public const ushort RES_REGIST = 2;
+    //public const ushort RES_REGIST = 2;
     public const ushort RES_MATCH = 3;
 }
 
@@ -81,4 +81,9 @@ public class Res_LoginData
 {
     public int UserId { get; set; }
 
+}
+
+public class Res_MatchData
+{
+    public List<int> UserIds { get; set; } = new List<int>();
 }
